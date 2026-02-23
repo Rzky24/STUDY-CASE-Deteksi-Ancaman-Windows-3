@@ -41,7 +41,11 @@ C:\Users\Administrator\AppData\Roaming\update.exe
 Jawaban yang Benar
 Apa domain dari server Command and Control?
 
-route.m365officesync.workers.dev
+tetap di folder yang sama - kita cari dns id 22 yaitu - dns query - lihat detail 
+maka akan muncul seperti contoh di bawah ini :
+<img width="1349" height="671" alt="image" src="https://github.com/user-attachments/assets/2f126cd5-4169-4d7f-9bf1-0e0eaa5fc7a2" />
+
+jawaban : route.m365officesync.workers.dev
 
 Jawaban yang Benar
 
@@ -88,17 +92,35 @@ C:\Users\Administrator\Desktop\Practice\Task 3\ Security.evtx
 Jawablah pertanyaan-pertanyaan di bawah ini.
 Berapa kali pelaku ancaman gagal masuk ke akun Administrator?
 
-6
+caranya kita masuk dulu di eventviewer di task 3  - di folder save log - security - amati bagian id 4738 -berapakali user account management muncul- di sini pelaku ancaman mengakses beberapa login yang mengarah ke target user name administrator 
+
+jawaban : 6
 
 Jawaban yang Benar
+
 Setelah berhasil masuk, pengguna backdoor mana yang dibuat oleh penyerang?
+lihat di detail user account management yaitu event id 4738 - amati di bagian detail - target user name - suport
 
-support
+kurang lebih seperti ini isi nya  :
+EventData 
+
+  Dummy - 
+  TargetUserName support 
+
+
+
+jawaban : support
 
 Jawaban yang Benar
+
 Ke grup istimewa mana pengguna backdoor ditambahkan?
 
-Administrators
+lihat di task category - security group management - amati bagian general 
+<img width="1306" height="486" alt="image" src="https://github.com/user-attachments/assets/5ba69982-ae27-41d5-894c-5e4cd0dc6fae" />
+
+
+
+jawaban : Administrators
 
 Jawaban yang Benar
 
@@ -241,3 +263,6 @@ Pada tahap manakah serangan (misalnya, eksfiltrasi) paling baik dideteksi dan di
 Initial Access
 
 Jawaban yang Benar
+
+# Kesimpulan : 
+Di ruangan ini, Anda telah mempelajari tentang Komando dan Kontrol, Ketahanan , dan Dampak - tiga taktik yang diamati selama kampanye serangan tingkat lanjut. Anda mempelajari mengapa penyerang membangun saluran C2 , bagaimana mereka mempertahankan akses jangka panjang menggunakan tugas terjadwal, folder startup, layanan, dan kunci eksekusi, serta bagaimana mendeteksi tindakan ini melalui log peristiwa Windows.
