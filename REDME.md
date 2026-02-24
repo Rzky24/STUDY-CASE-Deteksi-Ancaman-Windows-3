@@ -180,13 +180,18 @@ jawaban : Data Protection Service
 
 Jawaban yang Benar
 Tugas terjadwal mana yang dibuat untuk mempertahankan malware Troy?
-di folder event viewer - security alltime - lihat di genaral task information - task name  
+di folder event viewer - security alltime - lihat di genaral task information - task name  - other object access events 4698
 jawaban : AmazonSync
 
 Jawaban yang Benar
 Bendera apa yang Anda dapatkan setelah menemukan dan menjalankan malware Troy?
+CARA :BUKA SYSMON FOLDER -CARI Information	7/4/2025 10:14:07 PM	Sysmon	1	Process Create (rule: ProcessCreate) 
+LIHAT DETAIL : DAN CARI                           
+ParentCommandLine C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule 
+BUKA TROY.EXE DI :  C , PROGRAM FILES , COMMON FILES , CARI TROY.EXE ,DAN PASTEKAN ParentCommandLine C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule                             <img width="1332" height="501" alt="image" src="https://github.com/user-attachments/assets/e355a341-f84c-45ac-979e-3dbe4562ae2c" />
+                  
 
-THM{c2_is_on_schedule!}
+JAWABAN : THM{c2_is_on_schedule!}
 
 Jawaban yang Benar
 
